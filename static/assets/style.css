@@ -1,0 +1,191 @@
+.header{
+  padding: 3rem 0;
+}
+#my_camera {
+  width: 640px;
+  height: 480px;
+}
+#face-container{
+  width: 640px;
+  height: 480px;
+}
+#face-container img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.face-container{
+  background-color: #ddd;
+}
+
+@media screen and (orientation: landscape){
+  .profile .my_camera{
+    margin: 0 auto;
+    width: 320px !important;
+    height: 240px !important;
+  }
+  .profile .my_camera video{
+    width: 320px !important;
+    height: 240px !important;
+  }
+  .profile .face-container{
+    margin: 0 auto;
+    width: 320px;
+    height: 240px;
+  }
+  .profile .face-container img{
+    object-fit: cover;
+  }
+}
+@media screen and (orientation: portrait){
+  .profile .my_camera{
+    margin: 0 auto;
+    width: 240px !important;
+    height: 320px !important;
+  }
+  .profile .my_camera video{
+    width: 240px !important;
+    height: 320px !important;
+  }
+  .profile .face-container{
+    margin: 0 auto;
+    width: 240px;
+    height: 320px;
+  }
+  .modal-face-container{
+    width: 100%;
+    height: 0;
+    padding-bottom: 133.33%;
+    position: relative;
+  }
+  .modal-face-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.profile .face-container img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.profile input[type="text"]{
+  max-width: 360px;
+}
+
+
+.modal-face-container img{
+  max-width: 100%;
+}
+
+#profile_face-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-no-photo{
+  display: none;
+}
+.notification-submit-success{
+  display: none;
+}
+.notification-patch-success{
+  display: none;
+}
+.notification-maximum-photos{
+  display: none;
+}
+
+.header{
+  position: relative;
+}
+.header .logo-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  text-align: center;
+}
+.header .logo{
+  width: 300px;
+}
+.header .nav-link{
+  font-size: 2.5rem;
+}
+
+
+
+/* Login page */
+.input-group-text{
+  min-width: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* Bootstrap responsive styles redefine */
+@media (min-width: 1200px){
+  .container {
+    max-width: 1340px;
+  }
+}
+@media (min-width: 992px){
+  .modal-lg {
+      max-width: 700px;
+  }
+}
+@media (min-width: 576px){
+  .modal-sm {
+    max-width: calc(640px + 2rem);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1199px){
+  .header .logo-container{
+    position: static;
+  }
+  .header{
+    padding: 1rem 0;
+  }
+  .header .nav-link{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+@media (max-width: 567px){
+  #my_camera{
+    margin: 0 auto;
+    width: 320px !important;
+    height: 240px !important;
+  }
+  #my_camera video{
+    width: 320px !important;
+    height: 240px !important;
+  }
+  #face-container{
+    margin: 0 auto;
+    width: 320px;
+    height: 240px;
+  }
+
+/*  .profile .my_camera{
+    margin: 0 auto;
+    width: 300px !important;
+    height: 225px !important;
+  }
+  #my_camera video{
+    width: 320px !important;
+    height: 240px !important;
+    transform: none !important;
+  }*/
+}
+
